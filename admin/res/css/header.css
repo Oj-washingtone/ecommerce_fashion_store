@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+header nav {
+  display: inline-block;
+  width: 100%;
+  background-color: inherit;
+}
+#hambager-menu {
+  display: none;
+}
+
+#bottom-menu {
+  display: none;
+}
+
+#logo {
+  float: left;
+  /* margin-right: 10%; */
+}
+
+.nav-links {
+  margin: 0 auto;
+  width: max-content;
+  background-color: red;
+  /* height: 500px; */
+  /* margin-top: 100px; */
+}
+
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  font-size: 13px;
+  text-transform: uppercase;
+  float: left;
+  margin: 10px 20px;
+  justify-content: space-around;
+}
+
+header nav ul li:hover {
+  text-decoration: underline;
+}
+
+.active-link {
+  color: red;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+}
+
+.nav-btns {
+  float: right;
+}
+
+header nav ul li button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+header nav ul li button i {
+  font-size: 25px;
+}
+header nav ul li button span {
+  position: absolute;
+  top: 25px;
+  right: 33px;
+  width: 15px !important;
+  height: 15px !important;
+  color: #fff;
+  background-color: red;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: bold;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="res/images/site/famousIcon.PNG">
+    <title>Famous | Shop</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="res/css/main1.css">
+
+    <!-- External livraries -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <div class="logo">
+                <h2><i class="bx bx-shopping-bag"></i> famous.</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">For You</a></li>
+                    <li><a href="">Fashion</a></li>
+                    <li><a href="">Beauty</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Customer Service</a></li>
+                    <li><a href="">Login / Sign up</a></li>
+                </ul>
+            </nav>
+
+            <div class="search">
+                <div class="search-icons">
+                    <i class="bx bx-search"></i>
+                </div>
+                <input type="search" placeholder="Search">
+                <div class="search-icons">
+                    <button id="shopping-cart-btn">
+                        <i class="bx bxs-shopping-bag"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="barner">
+                <div class="barner-ad">
+                    <h1>Get 20% off New Arivals</h1>
+                    <p>Discover your test in fashion and beauty <br> Famous got you covered with amaizing, trendy fashion</p>
+                    <button>Shop now <i class="bx bxs-shopping-bag"></i></button>
+                </div>
+                <div class="barner-slider">
+                    <img src="res/images/site/b6.jpg" alt="ad">
+                </div>
+            </div>
+            <div class="new">
+                <div class="filter-recommendations">
+                    <ul>
+                        <li><a href="">All</a></li>
+                        <li><a href="">Men</a></li>
+                        <li><a href="">Women</a></li>
+                        <li><a href="">Boys</a></li>
+                        <li><a href="">Girls</a></li>
+                        <li><a href="">Baby</a></li>
+                        <li><a href="">Moms</a></li>
+                        <li><a href="">Traditional</a></li>
+                        
+                    </ul>
+                </div>
+                <hr>
+                <div class="product-recomendation-section">
+                    <div class="suggestions">
+                        <h3>For You</h3>
+                        <ul>
+                            <h5>Filter By:</h5>
+                            <li><a href="">Sport Shoes</a></li>
+                            <li><a href="">Jackets</a></li>
+                            <li><a href="">Official Shoes</a></li>
+                            <li><a href="">Coats</a></li>
+                            <li><a href="">Dresses</a></li>
+                            <li><a href="">Jeans Trouser</a></li>
+                            <li><a href="">Official</a></li>
+                            <li><a href="">More </a></li>
+                        </ul>
+                    </div>
+                    <div class="product-list" id="my-products">
+                        product-list
+                    </div>
+                    <div class="trending-brands">
+                        <h4>Popular Brands</h4>
+                        <div class="suggestions">
+                            <ul>
+                                <li><a href=""><i class="bx bxl-adidas"></i> Adidas</a></li>
+                                <li><a href=""><i class="bx bxl-adidas"></i> Nike</a></li>
+                                <li><a href=""><i class="bx bxl-adidas"></i> Zara</a></li>
+                                <li><a href=""><i class="bx bxl-adidas"></i> Kitenge</a></li>
+                                <li><a href=""><i class="bx bxl-adidas"></i> More </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="testimonials">
+                    <h2>Reviews & Testimonials</h2>
+                </div>
+                <div class="footer">
+                    <div class="footer-section">
+                        <div>
+                            <h2 style="color: #fff;"><i class="bx bxs-shopping-bag"></i> famous.</h2>
+                        </div>
+                        <h4>About us</h4>
+                        <p>We are a leading online fashion store the only place you can find great taset in fashion and beauty.</p>
+                        <p><a href="+254712028821"><i class="bx bxs-phone"></i> +254 712 028 821</a></p>
+                        <p><a href="maitto:jalangowashingtone@gmail.com"><i class="bx bxs-envelope"> contact@famousstore.com</i></a></p>
+                        <a href=""><i class="bx bxl-facebook-circle"></i></a>
+                        <a href=""><i class="bx bxl-instagram"></i></a>
+                        <a href=""><i class="bx bxl-twitter"></i></a>
+                        <a href=""><i class="bx bxl-linkedin"></i></a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Information</h4>
+                        information
+                        <br>
+                        <p>Customer Service</p>
+                        <p>Privacy Policy</p>
+                        <p>Shipping and Delivery</p>
+                        <p>Terms and conditions</p>
+                        <p>Returns and Exchange</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Useful links</h4>
+                        
+                        <p>Shop now</p>
+                        store near you
+                        <p>Size guide</p>
+                        <p>Blog</p>
+                        <p>FAQ</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Subscribe</h4>
+                        Subscribe
+                    </div>
+                </div>
+                <div style="padding: 10px 0;">
+                    <p style="text-align: center;">Famous Fashion &copy; 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="catalog"></div>
+
+    <script>
+        function viewProduct(id){
+            window.location.href = "product-single.php?ls="+id;
+        }
+    </script>
+    <script type="module" src="model/get-sigle-product.js"></script>
+    <script type="module" src="model/get-recommended-products.js"></script>
+</body>
+</html>

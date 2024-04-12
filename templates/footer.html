@@ -1,0 +1,78 @@
+
+    <div class="footer">
+        <div class="footer-section">
+            <div>
+                <h2 style="color: #fff;"><i class="bx bxs-shopping-bag"></i> famous.</h2>
+            </div>
+            <h4>About us</h4>
+            <p>We are a leading online fashion store the only place you can find great taset in fashion and beauty.</p>
+            <p><a href="+254712028821"><i class="bx bxs-phone"></i> +254 712 028 821</a></p>
+            <p><a href="maitto:jalangowashingtone@gmail.com"><i class="bx bxs-envelope"> contact@famousstore.com</i></a></p>
+            <a href=""><i class="bx bxl-facebook-circle"></i></a>
+            <a href=""><i class="bx bxl-instagram"></i></a>
+            <a href=""><i class="bx bxl-twitter"></i></a>
+            <a href=""><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <div class="footer-section">
+            <h4>Information</h4>
+            information
+            <br>
+            <p>Customer Service</p>
+            <p>Privacy Policy</p>
+            <p>Shipping and Delivery</p>
+            <p>Terms and conditions</p>
+            <p>Returns and Exchange</p>
+        </div>
+        <div class="footer-section">
+            <h4>Useful links</h4>
+            
+            <p>Shop now</p>
+            store near you
+            <p>Size guide</p>
+            <p>Blog</p>
+            <p>FAQ</p>
+        </div>
+        <div class="footer-section">
+            <h4>Subscribe</h4>
+            Don't be left out, stay ontop of fashion trend, subscribe to our newsleter today
+
+            <div>
+                <input type="email" placeholder="Enter your email address"
+                style="padding: 5px 10px; margin-top: 40px; border-radius: 5px; border: 1px solid gray; outline: none;">
+                <button type="submit" style="padding: 5px 10px; color: #fff; background-color: #000; cursor: pointer;">Sbscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import {Ajax} from './model/ajax.js';
+
+        setInterval(()=>{
+            Ajax.get("model/queries/get-cart-totals.php", (err, data)=>{
+                if(err){
+                    console.log(err)
+                }else{
+                    if(data !== ""){
+                        const cart_count = document.getElementById('count-cart');
+                        cart_count.innerHTML = data;
+                        cart_count.style.display = 'grid';
+                    }else{
+                        cart_count.style.display = "none";
+                    } 
+                }
+            });
+        }, 500);
+
+        document.getElementById('shopping-cart-btn').onclick = ()=>{
+            window.location.href = "cart.php";
+        }
+    </script>
+    <script>
+        function viewProduct(id){
+            window.location.href = "product-single.php?ls="+id;
+        }
+    </script>
+    <script type="module" src="model/get-recommended-products.js"></script>
+    <script type="module" src="model/get-sigle-product.js"></script>
+</body>
+</html>
